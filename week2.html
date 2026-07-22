@@ -1,84 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 2 — JavaScript deep dive I</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 — JavaScript deep dive I</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="brand"
+          >CS Fundamentals &amp; JS Depth
+          <span class="brand-sub">Month 1 — конспекти та практика</span>
+        </a>
+        <nav class="week-nav">
+          <a href="week1.html"><span class="num">01</span>Week 1</a>
+          <a href="week2.html" class="active"
+            ><span class="num">02</span>Week 2</a
+          >
+          <a href="week3.html"><span class="num">03</span>Week 3</a>
+          <a href="week4.html"><span class="num">04</span>Week 4</a>
+        </nav>
+      </div>
+      <div class="nav-path"></div>
+    </header>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="brand">CS Fundamentals &amp; JS Depth
-      <span class="brand-sub">Month 1 — конспекти та практика</span>
-    </a>
-    <nav class="week-nav">
-      <a href="week1.html"><span class="num">01</span>Week 1</a>
-      <a href="week2.html" class="active"><span class="num">02</span>Week 2</a>
-      <a href="week3.html"><span class="num">03</span>Week 3</a>
-      <a href="week4.html"><span class="num">04</span>Week 4</a>
-    </nav>
-  </div>
-  <div class="nav-path"></div>
-</header>
+    <main>
+      <div class="eyebrow">Week 02 / 04</div>
+      <h1 class="page-title">JavaScript deep dive I</h1>
+      <p class="page-lede">
+        Типи даних, область видимості й hoisting, closures, this, прототипи та
+        прототипне наслідування.
+      </p>
 
-<main>
-  <div class="eyebrow">Week 02 / 04</div>
-  <h1 class="page-title">JavaScript deep dive I</h1>
-  <p class="page-lede">Типи даних, область видимості й hoisting, closures, this, прототипи та прототипне наслідування.</p>
+      <section class="block">
+        <h2>Ключові теми</h2>
+        <div class="topic-pills">
+          <span class="topic-pill">Data types</span>
+          <span class="topic-pill">Scope &amp; hoisting</span>
+          <span class="topic-pill">Closures</span>
+          <span class="topic-pill">this</span>
+          <span class="topic-pill">Prototypes</span>
+          <span class="topic-pill">Prototypal inheritance</span>
+        </div>
+      </section>
 
-  <section class="block">
-    <h2>Ключові теми</h2>
-    <div class="topic-pills">
-      <span class="topic-pill">Data types</span>
-      <span class="topic-pill">Scope &amp; hoisting</span>
-      <span class="topic-pill">Closures</span>
-      <span class="topic-pill">this</span>
-      <span class="topic-pill">Prototypes</span>
-      <span class="topic-pill">Prototypal inheritance</span>
-    </div>
-  </section>
+      <section class="block">
+        <h2>Практика / Deliverable</h2>
+        <ul class="deliverables">
+          <li>
+            Rebuild 3–4 класичні JS-утиліти з нуля: debounce, memoize, curry
+          </li>
+          <li>Без туторіалів — тільки власна реалізація</li>
+        </ul>
+      </section>
 
-  <section class="block">
-    <h2>Практика / Deliverable</h2>
-    <ul class="deliverables">
-      <li>Rebuild 3–4 класичні JS-утиліти з нуля: debounce, memoize, curry</li>
-      <li>Без туторіалів — тільки власна реалізація</li>
-    </ul>
-  </section>
+      <section class="block">
+        <h2>Конспекти (PDF)</h2>
+        <div class="material-grid">
+          <a
+            href="assets/pdf/javascript-fundamentals.pdf"
+            class="material-card"
+            target="_blank"
+          >
+            <span class="icon">PDF</span>
+            <span class="name">JavaScript Fundamentals</span>
+            <span class="action">Відкрити →</span>
+          </a>
 
-<section class="block">
-    <h2>Конспекти (PDF)</h2>
-    <div class="material-grid">
-      <a href="assets/pdf/javascript-fundamentals.pdf" class="material-card" target="_blank">
-        <span class="icon">PDF</span>
-        <span class="name">JavaScript Fundamentals</span>
-        <span class="action">Відкрити →</span>
-      </a>
-      <a href="assets/pdf/javaScript-arrays-objects.pdf" class="material-card" target="_blank">
-        <span class="icon">PDF</span>
-        <span class="name">JavaScript Arrays & Objects</span>
-        <span class="action">Відкрити →</span>
-      </a>
-      <a href="assets/pdf/javascript-hoisting-closures.pdf" class="material-card" target="_blank">
-        <span class="icon">PDF</span>
-        <span class="name">JavaScript Hoisting & Closures</span>
-        <span class="action">Відкрити →</span>
-      </a>
-       <a href="assets/pdf/javascript-this-prototypes-oop-classes.pdf" class="material-card" target="_blank">
-        <span class="icon">PDF</span>
-        <span class="name">JavaScript this, Prototypes & OOP Classes</span>
-        <span class="action">Відкрити →</span>
-      </a>
-    </div>
-  </section>
+          <a
+            href="assets/pdf/javascript-hoisting-closures.pdf"
+            class="material-card"
+            target="_blank"
+          >
+            <span class="icon">PDF</span>
+            <span class="name">JavaScript Hoisting & Closures</span>
+            <span class="action">Відкрити →</span>
+          </a>
+          <a
+            href="assets/pdf/javascript-this-prototypes-oop-classes.pdf"
+            class="material-card"
+            target="_blank"
+          >
+            <span class="icon">PDF</span>
+            <span class="name">JavaScript this, Prototypes & OOP Classes</span>
+            <span class="action">Відкрити →</span>
+          </a>
+        </div>
+      </section>
+    </main>
 
-</main>
-
-<footer>
-  Навчальний конспект курсу — Month 1: CS Fundamentals &amp; JavaScript Depth
-</footer>
-
-</body>
+    <footer>
+      Навчальний конспект курсу — Month 1: CS Fundamentals &amp; JavaScript
+      Depth
+    </footer>
+  </body>
 </html>
